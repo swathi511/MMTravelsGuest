@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DateTimePicker"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+   >
+
+
+
+    <DatePicker
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:id="@+id/datePicker"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:background="@drawable/rect_ash_stroke_bg_single_line"/>
+
+    <TimePicker
+        android:id="@+id/simpleTimePicker"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:timePickerMode="spinner"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:background="@drawable/rect_ash_stroke_bg_single_line"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <Button android:id="@+id/ok"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="ok"
+        android:background="#0090db"
+        android:textColor="#ffff"
+        android:layout_margin="16dp"
+        android:textAllCaps="false"/>
+
+    <Button android:id="@+id/cancel"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Back"
+        android:background="#0090db"
+        android:textColor="#ffff"
+        android:layout_margin="16dp"
+        android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e4e4e4">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/linear_booking"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking For"
+            android:id="@+id/tv_bookingfor"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiogroup_booking"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self"
+                android:checked="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:layout_marginLeft="0dp"
+                android:id="@+id/radio_self"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For Other"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/radio_other"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <EditText android:id="@+id/edit_guest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Guest Name"
+        android:background="@drawable/shapehello"
+        android:textColorHint="#e0e0e0"
+        android:drawableLeft="@drawable/new_user"
+        android:padding="6dp"
+        android:textSize="14sp"
+        android:layout_margin="8dp"
+        android:drawablePadding="6dp"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText android:id="@+id/edit_gmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:background="@drawable/shapehello"
+        android:textColorHint="#e0e0e0"
+        android:drawableLeft="@drawable/phone"
+        android:padding="6dp"
+        android:textSize="14sp"
+        android:layout_margin="8dp"
+        android:drawablePadding="6dp"
+        android:textColor="@color/colorBlack"
+        android:inputType="number"/>
+
+
+    <EditText  android:id="@+id/edit_gemail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Id"
+        android:background="@drawable/shapehello"
+        android:textColorHint="#e0e0e0"
+        android:drawableLeft="@drawable/email"
+        android:padding="6dp"
+        android:textSize="14sp"
+        android:layout_margin="8dp"
+        android:drawablePadding="6dp"
+        android:textColor="@color/colorBlack"
+        android:inputType="textEmailAddress"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Type"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"
+            android:gravity="left"
+            />
+
+        <Spinner android:id="@+id/spinner_bokkingtype"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:background="@drawable/bg_spinner"
+            android:padding="4dp">
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/linear_layout120">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Point-Point"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"
+            android:gravity="left"
+            />
+
+
+        <Spinner android:id="@+id/spinner_pointtopoint"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:background="@drawable/bg_spinner"
+            android:padding="4dp">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear_110"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel Type"
+            android:id="@+id/textview_travel"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiogroup"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local"
+                android:checked="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/radio_local"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Outstation"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/radio_outstation"/>
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_nodays"
+            android:hint="Days"
+            android:padding="6dp"
+            android:background="@drawable/shapehello"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="14dp"
+        android:visibility="gone"
+        android:id="@+id/ll_out_station"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outstation Name"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center"
+            android:id="@+id/tv_out_staion"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shapehello"
+            android:maxLines="2"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:maxLength="50"
+            android:id="@+id/et_out_station"
+            android:textSize="12sp"
+            android:padding="2dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rep. Date/Time"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/date"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView  android:id="@+id/edit_reportingdatetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="select"
+            android:textColor="#bababa"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/time"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="center"/>
+
+        <TextView android:id="@+id/select_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="select"
+            android:textColor="#bababa"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <ImageView android:id="@+id/fnb_iv_edit"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/pencil"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Location"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"
+            android:gravity="left"
+            />
+        <Spinner
+            android:id="@+id/spinner_servicelocation"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:background="@drawable/bg_spinner"
+            android:padding="4dp">
+        </Spinner>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Type"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"
+            android:gravity="left"
+            />
+        <Spinner android:id="@+id/spinner_vehicle"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:background="@drawable/bg_spinner"
+            android:padding="4dp"
+            >
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reporting Place"
+            android:textSize="12sp"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="1"
+            android:gravity="left"
+            />
+
+        <Spinner android:id="@+id/spinner_reportingplace"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:background="@drawable/bg_spinner"
+            android:padding="4dp"
+           >
+        </Spinner>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout10"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otherplaces"
+            android:id="@+id/text_otherplaces"
+            android:textColor="@color/colorBlack"
+            android:textSize="12dp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shapehello"
+            android:maxLines="5"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:id="@+id/edit_otherplace"
+            android:textSize="12sp"
+            android:padding="4dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout11"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flight No. / Train No."
+            android:id="@+id/text_flight"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="xxxx"
+            android:background="@drawable/shapehello"
+            android:inputType="number"
+            android:id="@+id/edit_flight"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:padding="4dp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="@drawable/butn_save"
+        android:textColor="#ffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_submit"
+        android:padding="2dp"/>
+</LinearLayout>
+
+</ScrollView>

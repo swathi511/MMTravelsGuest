@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hjsoftware.mmtravelsguest">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyAdUvJeO1Ww_ttYSyowaM4OqM32zT7FeQE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.hjsoftware.mmtravelsguest.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hjsoftware.mmtravelsguest.activity.HomeActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.hjsoftware.mmtravelsguest.activity.VehicleActivity" />
+        <activity android:name="com.hjsoftware.mmtravelsguest.activity.ChangepasswordActivity" />
+        <activity android:name="com.hjsoftware.mmtravelsguest.activity.BookingListActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.hjsoftware.mmtravelsguest.activity.SpecificBookingActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.TrackBookingActivity"/>
+        <activity android:name=".activity.MapTrackingActivity"/>
+    </application>
+
+</manifest>

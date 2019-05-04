@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shaperectangle">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/container_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<include-->
+            <!--android:id="@+id/toolbar"-->
+            <!--layout="@layout/toolbar" />-->
+
+    <!--</LinearLayout>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Back"-->
+        <!--android:id="@+id/textview_back"-->
+        <!--android:textColor="#800000"/>-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="25sp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Ref No:"
+        android:textSize="18dp"
+        android:textColor="#800000"
+        android:layout_marginLeft="7sp"
+        />
+    <EditText
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10sp"
+        android:id="@+id/booking_refno"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Date"
+            android:textSize="18dp"
+            android:textColor="#800000"
+            android:layout_marginLeft="7sp"
+            />
+        <EditText
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10sp"
+            android:id="@+id/booking_date"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reporting Date"
+            android:textSize="18dp"
+            android:textColor="#800000"
+            android:layout_marginLeft="7sp"
+            />
+        <EditText
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10sp"
+            android:id="@+id/reporting_date"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reporting Time"
+            android:textSize="18dp"
+            android:textColor="#800000"
+            android:layout_marginLeft="7sp"
+            />
+        <EditText
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10sp"
+            android:id="@+id/reporting_time"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Guest Name"
+        android:layout_marginRight="40sp"
+        android:textColor="#800000"
+        android:textSize="18dp"
+        android:id="@+id/guestname"
+        android:layout_gravity="end"
+        android:layout_marginBottom="10dp"
+       />
+
+</LinearLayout>

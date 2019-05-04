@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MM Travels Guest</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Book a Taxi</item>
+        <item>Your Profile</item>
+        <item>Your Rides</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+</resources>
